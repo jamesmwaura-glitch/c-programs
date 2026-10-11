@@ -1,12 +1,16 @@
 #include <stdio.h>
-int main(){
-printf("UNITS OFFERED THIS SEMESTER.\n");
+int main (){
+int attendance=75;
+int average_marks=40;
 
-    printf("1:introduction to programming.\n");
-    printf("2:data structures.\n");
-    printf("3:computer networks.\n");
-    printf("4:database systems.\n");
-    printf("5:software engeneering.");
-
-    return 0;
+if (attendance >=75){
+    printf("Your eligible for the final examination.");
+}
+else if (average_marks >=40){
+    printf("Your eligible for the final examination.");
+}
+else {
+    printf("Not eligible!!!");
+}
+return 0;
 }
