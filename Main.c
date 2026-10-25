@@ -1,19 +1,23 @@
 #include <stdio.h>
-int main(void)
-{
 
-    const int password=1234; 
-   int enteredpassword;
+int main(void) {
+    
+    int units; 
+    int rate;
+    int totalbill;
 
-    printf("Enter the correct password:  \n");
-    scanf("%d",&enteredpassword);
-    
-    
-    if(enteredpassword!=1234){
-        printf("Access Denied");
+printf("Enter the number of consumed units :");
+scanf("%d",&units);
+
+    if (units <= 100) {
+        rate = 10;
+    } else if (units <= 200) {
+        rate = 15;
+    } else {
+        rate = 20;
     }
-    else{
-    printf("Access Granted");
-    }
+
+    totalbill = units * rate;
+    printf("Total bill: %d\n", totalbill);
     return 0;
 }
