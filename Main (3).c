@@ -9,7 +9,7 @@ scanf("%f",&fahrenheit);
 
 celsius=(fahrenheit-32.0)*5/9;
 
-printf("%.2f\n",celsius);
+printf("%.0f\n",celsius);
 return 0;
 }
 
