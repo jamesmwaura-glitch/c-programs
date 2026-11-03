@@ -8,17 +8,17 @@
 int main() {
     int occupancy[FLOORS][ROOMS_PER_FLOOR];
     
-    // Seed the random number generator with current time
+    
     srand(time(NULL));
 
-    // Populate the 2D array with random 0s (vacant) and 1s (occupied)
+
     for (int i = 0; i < FLOORS; i++) {
         for (int j = 0; j < ROOMS_PER_FLOOR; j++) {
             occupancy[i][j] = rand() % 2;
         }
     }
 
-    // Display the occupancy details and floor summaries
+    
     printf("--- Hotel Branch Room Occupancy Report ---\n\n");
 
     int total_occupied = 0;
@@ -45,7 +45,7 @@ int main() {
         printf("------------------------------------------\n");
     }
 
-    // Overall Branch Totals
+
     printf("Total Occupied Rooms across Branch : %d\n", total_occupied);
     printf("Total Vacant Rooms across Branch   : %d\n", total_vacant);
 
